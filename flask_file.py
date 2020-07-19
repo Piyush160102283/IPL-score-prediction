@@ -72,4 +72,4 @@ def predict():
         return render_template('result.html',lower_limit=pred_score-10, upper_limit=pred_score+5)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=33507)
