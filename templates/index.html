@@ -167,14 +167,13 @@
 function validateform()
 {
 var battingteam=document.getElementById("batteam");
-//var ex = battingteam.options[battingteam.selectedIndex].value;
 var bowlingteam=document.getElementById("bowlteam");
 var overs=document.myform.overs.value;  
-var wickets=document.myform.wickets.value;  	
-var runs=document.myform.runs.value;  
-var runs_in_prev_5=document.myform.runs_in_prev_5.value;
-var wickets_in_prev_5=document.myform.wickets_in_prev_5.value;
-  
+var wickets=parseInt(document.myform.wickets.value,10);  	
+var runs=parseInt(document.myform.runs.value,10);  
+var runs_in_prev_5=parseInt(document.myform.runs_in_prev_5.value,10);
+var wickets_in_prev_5=parseInt(document.myform.wickets_in_prev_5.value,10);
+	
  if (battingteam.options[battingteam.selectedIndex].value == bowlingteam.options[bowlingteam.selectedIndex].value){  
   alert("Batting team and Bowling team can not be same!");  
   return false;  
